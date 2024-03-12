@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="css/formstyle.css">
+</head>
+<body>
+
+<form action="#" method="post">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Email aktif" required>
+
+    <label for="no_hp">No HP:</label>
+    <input type="tel" id="no_hp" name="no_hp" placeholder="No HP aktif" required>
+
+    <label for="jenis_kelamin">Jenis Kelamin:</label>
+    <select id="jenis_kelamin" name="jenis_kelamin" required>
+        <option value="laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+    </select>
+
+    <label for="prodi">Prodi:</label>
+    <select id="prodi" name="prodi" required>
+        <option value="akuntansi">Akuntansi</option>
+        <option value="teknologi_informasi">Teknologi Informasi</option>
+        <option value="teknologi_mesin">Teknologi Mesin</option>
+        <option value="administrasi_perkantoran">Administrasi Perkantoran</option>
+        <option value="other">Other</option>
+    </select>
+
+    <div class="checkbox-group">
+        <label>Hobi:</label>
+        <input type="checkbox" id="membaca" name="hobi[]" value="membaca">
+        <label for="membaca">Membaca</label>
+        <input type="checkbox" id="menulis" name="hobi[]" value="menulis">
+        <label for="menulis">Menulis</label>
+        <input type="checkbox" id="menyanyi" name="hobi[]" value="menyanyi">
+        <label for="menyanyi">Menyanyi</label>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="olahraga">
+        <label for="olahraga">Olahraga</label>
+    </div>
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="alamat" placeholder="Alamat lengkap" required></textarea>
+
+    <label for="foto">Foto Diri:</label>
+    <input type="file" id="foto" name="foto" accept="image/*" required>
+
+    <button type="submit">DAFTAR</button>
+</form>
+
+<script src="formscript.js"></script>
+
+
+</body>
+</html>
